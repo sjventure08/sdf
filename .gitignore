@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/public/SocialActivity/CS_GATE2027_Syllabus.pdf
+/public/SocialActivity/DA_GATE2027_Syllabus.pdf
+/public/sanatanabg.tmp
