@@ -5,6 +5,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { PiCaretLeft, PiCaretRight } from "react-icons/pi";
+
 import {
   Carousel,
   CarouselContent,
@@ -13,7 +15,7 @@ import {
 
 const slides = [
   {
-    image: "/herobg.png",
+    image: "/SpiritualEvents/spiritualevents-25.webp",
     eyebrow: "Sanatana Dharma Foundation",
     title: "What if your roots could shape your future?",
     description:
@@ -40,7 +42,7 @@ const slides = [
     ctaHref: "/contact",
   },
   {
-    image: "/SanatanaDharma.png",
+    image: "/SacredPooja/sacredpooja-04.webp",
     eyebrow: "Sanatana Dharma",
     title: "Discover a tradition older than time itself.",
     description:
@@ -165,9 +167,7 @@ export default function Hero1() {
         aria-label="Previous slide"
         className="group absolute left-3 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/30 bg-white/10 p-2 backdrop-blur-sm transition-colors hover:bg-white/20 lg:left-6 lg:p-3"
       >
-        <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 text-white" aria-hidden="true">
-          <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        <PiCaretLeft className="h-5 w-5 text-white" aria-hidden="true" />
       </button>
 
       <button
@@ -176,9 +176,7 @@ export default function Hero1() {
         aria-label="Next slide"
         className="group absolute right-3 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/30 bg-white/10 p-2 backdrop-blur-sm transition-colors hover:bg-white/20 lg:right-6 lg:p-3"
       >
-        <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 text-white" aria-hidden="true">
-          <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        <PiCaretRight className="h-5 w-5 text-white" aria-hidden="true" />
       </button>
 
       {/* Dots */}

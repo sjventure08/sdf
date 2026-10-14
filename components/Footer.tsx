@@ -3,6 +3,8 @@
 import { useState, type FormEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import type { IconType } from "react-icons";
+import { PiFacebookLogo, PiInstagramLogo, PiYoutubeLogo } from "react-icons/pi";
 
 const exploreLinks = [
     { label: "Home", href: "/" },
@@ -20,40 +22,15 @@ const socialLinks: { name: SocialName; href: string; label: string }[] = [
     { name: "youtube", href: "#", label: "YouTube" },
 ];
 
-function SocialIcon({ name, className }: { name: SocialName; className?: string }) {
-    const common = {
-        viewBox: "0 0 24 24",
-        fill: "none" as const,
-        stroke: "currentColor",
-        strokeWidth: 1.5,
-        strokeLinecap: "round" as const,
-        strokeLinejoin: "round" as const,
-        className,
-    };
+const socialIconMap: Record<SocialName, IconType> = {
+    instagram: PiInstagramLogo,
+    facebook: PiFacebookLogo,
+    youtube: PiYoutubeLogo,
+};
 
-    switch (name) {
-        case "instagram":
-            return (
-                <svg {...common}>
-                    <rect x="3" y="3" width="18" height="18" rx="5" />
-                    <circle cx="12" cy="12" r="4" />
-                    <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none" />
-                </svg>
-            );
-        case "facebook":
-            return (
-                <svg {...common}>
-                    <path d="M15 3h-2a5 5 0 0 0-5 5v3H6v4h2v6h4v-6h2.5l0.5-4H12V8a1 1 0 0 1 1-1h2Z" />
-                </svg>
-            );
-        case "youtube":
-            return (
-                <svg {...common}>
-                    <rect x="2.5" y="6" width="19" height="12" rx="3" />
-                    <path d="M10.5 9.5l4.5 2.5-4.5 2.5Z" fill="currentColor" stroke="none" />
-                </svg>
-            );
-    }
+function SocialIcon({ name, className }: { name: SocialName; className?: string }) {
+    const Component = socialIconMap[name];
+    return <Component className={className} aria-hidden="true" />;
 }
 
 export default function Footer() {

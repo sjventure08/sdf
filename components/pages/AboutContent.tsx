@@ -4,77 +4,24 @@ import { motion } from "motion/react";
 import Link from "next/link"
 import Image from "next/image";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+import type { IconType } from "react-icons";
+import { PiBookOpenText, PiFlame, PiFlowerLotus, PiHandHeart, PiHeart, PiSun, PiUsersThree } from "react-icons/pi";
 
 type IconName = "truth" | "compassion" | "seva" | "wisdom" | "unity" | "discipline" | "leaf";
 
-function Icon({ name, className }: { name: IconName; className?: string }) {
-    const common = {
-        viewBox: "0 0 24 24",
-        fill: "none" as const,
-        stroke: "currentColor",
-        strokeWidth: 1.5,
-        strokeLinecap: "round" as const,
-        strokeLinejoin: "round" as const,
-        className,
-    };
+const iconMap: Record<IconName, IconType> = {
+    truth: PiSun,
+    compassion: PiHeart,
+    seva: PiHandHeart,
+    wisdom: PiBookOpenText,
+    unity: PiUsersThree,
+    discipline: PiFlame,
+    leaf: PiFlowerLotus,
+};
 
-    switch (name) {
-        case "truth":
-            return (
-                <svg {...common}>
-                    <circle cx="12" cy="12" r="4" />
-                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-                </svg>
-            );
-        case "compassion":
-            return (
-                <svg {...common}>
-                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                </svg>
-            );
-        case "seva":
-            return (
-                <svg {...common}>
-                    <path d="M2 11l4-4 4 1 3 3-3 3-2-2" />
-                    <path d="M22 11l-4-4-4 1" />
-                    <path d="M11 11l2-2 4 4a1.5 1.5 0 0 1-2 2Z" />
-                    <path d="M13 13l1.5 1.5a1.5 1.5 0 0 1-2 2L11 15" />
-                </svg>
-            );
-        case "wisdom":
-            return (
-                <svg {...common}>
-                    <path d="M12 6c-2-1.5-4.5-2-7-2v13c2.5 0 5 .5 7 2 2-1.5 4.5-2 7-2V4c-2.5 0-5 .5-7 2Z" />
-                    <path d="M12 6v13" />
-                </svg>
-            );
-        case "unity":
-            return (
-                <svg {...common}>
-                    <circle cx="8" cy="12" r="4" />
-                    <circle cx="16" cy="12" r="4" />
-                </svg>
-            );
-        case "discipline":
-            return (
-                <svg {...common}>
-                    <path d="M12 21V10" />
-                    <path d="M12 10V2" />
-                    <path d="M12 10C9.5 10 7.3 7.8 6.2 3" />
-                    <path d="M12 10C14.5 10 16.7 7.8 17.8 3" />
-                    <path d="M7.5 8.5H16.5" />
-                </svg>
-            );
-        case "leaf":
-            return (
-                <svg {...common}>
-                    <path d="M12 21c-4-1-6-4-6-7 2 1 4 1 6-1 2 2 4 2 6 1 0 3-2 6-6 7Z" />
-                    <path d="M12 14V4" />
-                    <path d="M8 8c1 2 2 4 4 4" />
-                    <path d="M16 8c-1 2-2 4-4 4" />
-                </svg>
-            );
-    }
+function Icon({ name, className }: { name: IconName; className?: string }) {
+    const Component = iconMap[name];
+    return <Component className={className} aria-hidden="true" />;
 }
 
 const values = [

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { motion } from "motion/react";
+import { PiFlowerLotus } from "react-icons/pi";
 
 type Inputs = {
     name: string;
@@ -48,20 +49,7 @@ export default function InterestedForm() {
 
                 <div className="mt-3 flex items-center justify-center gap-3">
                     <span className="h-px w-8 bg-accent/40" />
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={1.5}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="h-4 w-4 text-accent"
-                    >
-                        <path d="M12 21c-4-1-6-4-6-7 2 1 4 1 6-1 2 2 4 2 6 1 0 3-2 6-6 7Z" />
-                        <path d="M12 14V4" />
-                        <path d="M8 8c1 2 2 4 4 4" />
-                        <path d="M16 8c-1 2-2 4-4 4" />
-                    </svg>
+                    <PiFlowerLotus className="h-4 w-4 text-accent" aria-hidden="true" />
                     <span className="h-px w-8 bg-accent/40" />
                 </div>
 

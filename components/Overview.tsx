@@ -3,6 +3,10 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
+import type { IconType } from "react-icons";
+import { FaOm } from "react-icons/fa";
+import { GiMeditation } from "react-icons/gi";
+import { PiBookOpenText, PiFlame, PiFlowerLotus, PiHandshake, PiHeart, PiInfinity, PiLeaf, PiSparkle, PiSun } from "react-icons/pi";
 
 type IconName =
     | "diamond"
@@ -14,94 +18,26 @@ type IconName =
     | "book"
     | "handshake"
     | "sun"
-    | "lotus";
+    | "lotus"
+    | "om";
+
+const iconMap: Record<IconName, IconType> = {
+    diamond: PiSparkle,
+    infinity: PiInfinity,
+    leaf: PiLeaf,
+    heart: PiHeart,
+    meditate: GiMeditation,
+    diya: PiFlame,
+    book: PiBookOpenText,
+    handshake: PiHandshake,
+    sun: PiSun,
+    lotus: PiFlowerLotus,
+    om: FaOm,
+};
 
 function Icon({ name, className }: { name: IconName; className?: string }) {
-    const common = {
-        viewBox: "0 0 24 24",
-        fill: "none" as const,
-        stroke: "currentColor",
-        strokeWidth: 1.5,
-        strokeLinecap: "round" as const,
-        strokeLinejoin: "round" as const,
-        className,
-    };
-
-    switch (name) {
-        case "diamond":
-            return (
-                <svg {...common}>
-                    <path d="M12 2l2 8 8 2-8 2-2 8-2-8-8-2 8-2 2-8z" />
-                </svg>
-            );
-        case "infinity":
-            return (
-                <svg {...common}>
-                    <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.74-8z" />
-                </svg>
-            );
-        case "leaf":
-            return (
-                <svg {...common}>
-                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-                </svg>
-            );
-        case "heart":
-            return (
-                <svg {...common}>
-                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                </svg>
-            );
-        case "meditate":
-            return (
-                <svg {...common}>
-                    <circle cx="12" cy="6" r="2.25" />
-                    <path d="M7 20c0-2 1-4 2-5l1.5-3h3L15 15c1 1 2 3 2 5" />
-                    <path d="M9 12h6" />
-                </svg>
-            );
-        case "diya":
-            return (
-                <svg {...common}>
-                    <path d="M4 15c0 3 3.5 5 8 5s8-2 8-5" />
-                    <path d="M4 15c0-1 3.5-2 8-2s8 1 8 2" />
-                    <path d="M12 10c-1.5-1.5-1.5-3.5 0-5 1.5 1.5 1.5 3.5 0 5z" />
-                </svg>
-            );
-        case "book":
-            return (
-                <svg {...common}>
-                    <path d="M12 6c-2-1.5-4.5-2-7-2v13c2.5 0 5 .5 7 2 2-1.5 4.5-2 7-2V4c-2.5 0-5 .5-7 2Z" />
-                    <path d="M12 6v13" />
-                </svg>
-            );
-        case "handshake":
-            return (
-                <svg {...common}>
-                    <path d="M2 11l4-4 4 1 3 3-3 3-2-2" />
-                    <path d="M22 11l-4-4-4 1" />
-                    <path d="M11 11l2-2 4 4a1.5 1.5 0 0 1-2 2Z" />
-                    <path d="M13 13l1.5 1.5a1.5 1.5 0 0 1-2 2L11 15" />
-                </svg>
-            );
-        case "sun":
-            return (
-                <svg {...common}>
-                    <circle cx="12" cy="12" r="4" />
-                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-                </svg>
-            );
-        case "lotus":
-            return (
-                <svg {...common}>
-                    <path d="M12 21c-4-1-6-4-6-7 2 1 4 1 6-1 2 2 4 2 6 1 0 3-2 6-6 7Z" />
-                    <path d="M12 14V4" />
-                    <path d="M8 8c1 2 2 4 4 4" />
-                    <path d="M16 8c-1 2-2 4-4 4" />
-                </svg>
-            );
-    }
+    const Component = iconMap[name];
+    return <Component className={className} aria-hidden="true" />;
 }
 
 const traits = [
@@ -113,22 +49,22 @@ const traits = [
 
 const offers = [
     {
-        image: "/meditating.png",
+        image: "/SacredPooja/sacredpooja-11.webp",
         title: "Discover Yourself",
         desc: "Understand the true nature of who you are beyond the body and mind.",
     },
     {
-        image: "/livingwithpurpose.png",
+        image: "/SpiritualEvents/spiritualevents-11.webp",
         title: "Live With Purpose",
         desc: "Align your thoughts, words and actions with dharma and higher values.",
     },
     {
-        image: "/growinwisdom.png",
+        image: "/SpiritualEvents/spiritualevents-20.webp",
         title: "Grow In Wisdom",
         desc: "Explore ancient wisdom that answers life's deepest questions.",
     },
     {
-        image: "/serving.png",
+        image: "/SocialActivity/socialactivity-09.webp",
         title: "Serve Selflessly",
         desc: "Make a positive impact and become a source of meaning for others.",
     },
@@ -165,11 +101,7 @@ export default function Overview() {
                     <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-4">
                         {traits.map((trait) => (
                             <div key={trait.label}>
-                                {trait.icon === "om" ? (
-                                    <span className="block text-2xl text-accent">ॐ</span>
-                                ) : (
-                                    <Icon name={trait.icon} className="h-7 w-7 text-accent" />
-                                )}
+                                <Icon name={trait.icon} className="h-7 w-7 text-accent" />
 
                                 <p className="mt-3 text-xs font-semibold uppercase tracking-[0.15em] text-primary-text">
                                     {trait.label}

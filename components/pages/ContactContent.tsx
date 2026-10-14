@@ -3,49 +3,21 @@
 import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { motion } from "motion/react";
+import type { IconType } from "react-icons";
+import { PiClock, PiEnvelopeSimple, PiMapPin, PiPhone } from "react-icons/pi";
 
 type IconName = "mail" | "phone" | "pin" | "clock";
 
-function Icon({ name, className }: { name: IconName; className?: string }) {
-    const common = {
-        viewBox: "0 0 24 24",
-        fill: "none" as const,
-        stroke: "currentColor",
-        strokeWidth: 1.5,
-        strokeLinecap: "round" as const,
-        strokeLinejoin: "round" as const,
-        className,
-    };
+const iconMap: Record<IconName, IconType> = {
+    mail: PiEnvelopeSimple,
+    phone: PiPhone,
+    pin: PiMapPin,
+    clock: PiClock,
+};
 
-    switch (name) {
-        case "mail":
-            return (
-                <svg {...common}>
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <path d="M3 7l9 6 9-6" />
-                </svg>
-            );
-        case "phone":
-            return (
-                <svg {...common}>
-                    <path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 1-2Z" />
-                </svg>
-            );
-        case "pin":
-            return (
-                <svg {...common}>
-                    <path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12Z" />
-                    <circle cx="12" cy="9" r="2.5" />
-                </svg>
-            );
-        case "clock":
-            return (
-                <svg {...common}>
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M12 7v5l3 3" />
-                </svg>
-            );
-    }
+function Icon({ name, className }: { name: IconName; className?: string }) {
+    const Component = iconMap[name];
+    return <Component className={className} aria-hidden="true" />;
 }
 
 const presenceCities = ["Delhi", "Mumbai", "Hyderabad", "Indore", "Chennai"];
@@ -53,7 +25,7 @@ const presenceCities = ["Delhi", "Mumbai", "Hyderabad", "Indore", "Chennai"];
 const contactDetails = [
     { icon: "mail" as const, label: "Email", value: "tailnext@gmail.com", href: "mailto:tailnext@gmail.com" },
     { icon: "phone" as const, label: "Phone", value: "+1 (123) 456-7890", href: "tel:+1 (123) 456-7890" },
-    { icon: "pin" as const, label: "Address", value: "601 Kailash building Katurba Gandi marg\n\nNew Delhi 110001", href: undefined },
+    { icon: "pin" as const, label: "Address", value: "214, Patparganj Industrial Area\n\nNew Delhi 110072", href: undefined },
     { icon: "clock" as const, label: "Office Hours", value: "Mon–Sat, 10am–60pm", href: undefined },
 ];
 
