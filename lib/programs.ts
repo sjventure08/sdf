@@ -36,11 +36,6 @@ const PROGRAM_META = [
         desc: "Assemblies and councils where the community gathers to deliberate, plan and carry forward the Foundation's mission.",
     },
     {
-        folder: "presidentOfIskcon",
-        title: "President of ISKCON",
-        desc: "Meetings and collaborations with the President of ISKCON in service of a shared dharmic vision.",
-    },
-    {
         folder: "SacredPooja",
         title: "Sacred Pooja",
         desc: "Traditional poojas and rituals performed with devotion, preserving sacred practice for every generation.",

@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
         title: "India Culture and Heritage",
         description:
             "Explore the rich tapestry of Indian culture, including traditional practices, vibrant festivals, and the profound influence of Hinduism.",
-        img: "/IndiaCulture.png",
+        img: "/intricate-stone-carving-temple-architecture.jpg",
         buttonText: "Read More",
         sections: [
             {
@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
         title: "Hindu Religious Texts and Scriptures",
         description:
             "Discover Hinduism's sacred wisdom: dive into the Vedas, Upanishads, Bhagavad Gita, and Ramayana, and their impact on spiritual and ethical living today.",
-        img: "/Hindu.png",
+        img: "/ancient-scripture.jpg",
         buttonText: "Read More",
         sections: [
             {
@@ -166,7 +166,7 @@ export const blogPosts: BlogPost[] = [
         title: "Sanatana Dharma Foundation: Reviving Ancient Wisdom and Modern Values",
         description:
             "Explore the Foundation's mission to preserve and promote ancient Indian wisdom, fostering spiritual growth and ethical living in the modern world.",
-        img: "/SanatanaDharma.png",
+        img: "/view-man-practicing-mindfulness-yoga-fantasy-setting.jpg",
         buttonText: "Read More",
         sections: [],
         conclusion: "",

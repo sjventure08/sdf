@@ -24,7 +24,7 @@ const slides = [
     ctaHref: "/contact",
   },
   {
-    image: "/KumbhMela/kumbhmela1.webp",
+    image: "/KumbhMela/kumbhmela-25.webp",
     eyebrow: "Kumbh Mela",
     title: "Walk the world's largest gathering of faith.",
     description:

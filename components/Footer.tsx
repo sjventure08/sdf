@@ -106,8 +106,8 @@ export default function Footer() {
                     </span>
 
                     <div className="mt-5 flex flex-col gap-3 text-sm text-[#E8CFA5]">
-                        <a href="mailto:tailnext@gmail.com" className="transition-colors hover:text-[#FFF8EA]">
-                            tailnext@gmail.com
+                        <a href="mailto:support@sanatanadharmafoundation.co" className="transition-colors hover:text-[#FFF8EA]">
+                            support@sanatanadharmafoundation.co
                         </a>
                         <a href="tel:+1 (123) 456-7890" className="transition-colors hover:text-[#FFF8EA]">
                             +1 (123) 456-7890
