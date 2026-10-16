@@ -24,9 +24,7 @@ const presenceCities = ["Delhi", "Mumbai", "Hyderabad", "Indore", "Chennai"];
 
 const contactDetails = [
     { icon: "mail" as const, label: "Email", value: "support@sanatanadharmafoundation.co", href: "mailto:support@sanatanadharmafoundation.co" },
-    { icon: "phone" as const, label: "Phone", value: "+1 (123) 456-7890", href: "tel:+1 (123) 456-7890" },
     { icon: "pin" as const, label: "Address", value: "Regd -214 Patparganj industrial area New Delhi 110072", href: undefined },
-    { icon: "clock" as const, label: "Office Hours", value: "Mon–Sat, 10am–60pm", href: undefined },
 ];
 
 type Inputs = {

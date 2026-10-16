@@ -109,9 +109,6 @@ export default function Footer() {
                         <a href="mailto:support@sanatanadharmafoundation.co" className="transition-colors hover:text-[#FFF8EA]">
                             support@sanatanadharmafoundation.co
                         </a>
-                        <a href="tel:+1 (123) 456-7890" className="transition-colors hover:text-[#FFF8EA]">
-                            +1 (123) 456-7890
-                        </a>
                         <span>Regd -214 Patparganj industrial area New Delhi 110072
 
 </span>
