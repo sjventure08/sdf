@@ -63,7 +63,7 @@ const aims = [
 const leadership = [
     {
         role: "Founder & Spiritual Guide",
-        desc: "Mahamandaleshwar Shri Shri 1008 Anant Shri Vibhushit Swami Narayan Giriji Maharaj sets the spiritual direction of the Foundation.",
+        desc: "Mahamandelshwar Shri Shri 1008 Narayananand Giri Maharaj | Panchayati Sri Niranjani Akhada sets the spiritual direction of the Foundation.",
     },
     {
         role: "Executive Director",
@@ -139,12 +139,13 @@ export default function AboutContent() {
                         className="relative order-1 aspect-4/3 w-full lg:order-2"
                     >
                         <Image
-                            src="/aboutimage.webp"
+                            src="/gurujiwithshishya.png"
                             alt="Sanatana Dharma Foundation"
                             fill
                             sizes="(min-width: 1024px) 42vw, 60vw"
                             loading="eager"
                             className="object-contain"
+                            border-radius="md"
                         />
                     </motion.div>
                 </div>
@@ -310,49 +311,7 @@ export default function AboutContent() {
                         </div>
                     </section >
 
-        {/* Leadership */ }
 
-        < section className = "bg-background px-8 py-16 md:px-16 md:py-24" >
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, amount: 0.6 }}
-                            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                            className="mx-auto max-w-2xl text-center"
-                        >
-                            <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
-                                Our People
-                            </span>
-
-                            <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
-                                Leadership
-                            </h2>
-                        </motion.div>
-
-                        <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                            {leadership.map((person, index) => (
-                                <motion.div
-                                    key={person.role}
-                                    initial={{ opacity: 0, y: 30 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true, amount: 0.3 }}
-                                    transition={{
-                                        duration: 0.6,
-                                        delay: index * 0.1,
-                                        ease: [0.22, 1, 0.36, 1],
-                                    }}
-                                >
-                                    <ImagePlaceholder label="Portrait" className="aspect-square w-full" />
-                                    <p className="mt-4 font-heading text-base text-primary-text">
-                                        {person.role}
-                                    </p>
-                                    <p className="mt-2 text-sm leading-6 text-secondary-text">
-                                        {person.desc}
-                                    </p>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </section >
 
         {/* CTA */ }
 

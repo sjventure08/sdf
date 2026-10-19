@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { motion } from "motion/react";
 import type { IconType } from "react-icons";
-import { PiClock, PiEnvelopeSimple, PiMapPin, PiPhone } from "react-icons/pi";
+import { PiClock, PiEnvelopeSimple, PiMapPin, PiMapPinFill, PiPhone } from "react-icons/pi";
 
 type IconName = "mail" | "phone" | "pin" | "clock";
 
@@ -20,7 +20,7 @@ function Icon({ name, className }: { name: IconName; className?: string }) {
     return <Component className={className} aria-hidden="true" />;
 }
 
-const presenceCities = ["Delhi", "Mumbai", "Hyderabad", "Indore", "Chennai"];
+const presenceCities = ["Delhi", "Hyderabad", "Chennai"];
 
 const contactDetails = [
     { icon: "mail" as const, label: "Email", value: "support@sanatanadharmafoundation.co", href: "mailto:support@sanatanadharmafoundation.co" },
@@ -221,9 +221,9 @@ export default function ContactContent() {
                 </div>
             </section>
 
-            {/* Map */}
+            {/* Presence (no maps) */}
 
-            <section className="bg-secondary/40 px-8 pb-16 md:px-16 md:pb-24">
+            <section className="bg-secondary/40 px-8 py-16 md:px-16 md:py-24">
                 <div className="mx-auto max-w-5xl">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -240,42 +240,22 @@ export default function ContactContent() {
                         </h2>
                     </motion.div>
 
-                    <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        {presenceCities.map((city, index) => {
-                            const query = encodeURIComponent(`${city}, India`);
-                            return (
-                                <motion.div
-                                    key={city}
-                                    initial={{ opacity: 0, y: 30 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true, amount: 0.3 }}
-                                    transition={{ duration: 0.6, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                                    className="overflow-hidden rounded-2xl border border-accent/15 bg-background"
-                                >
-                                    <iframe
-                                        title={`Map of ${city}`}
-                                        src={`https://www.google.com/maps?q=${query}&output=embed`}
-                                        className="h-48 w-full border-0"
-                                        loading="lazy"
-                                        referrerPolicy="no-referrer-when-downgrade"
-                                    />
-                                    <div className="flex items-center justify-between px-5 py-4">
-                                        <span className="flex items-center gap-2 text-sm font-semibold text-primary-text">
-                                            <Icon name="pin" className="h-4 w-4 text-accent" />
-                                            {city}
-                                        </span>
-                                        <a
-                                            href={`https://www.google.com/maps/search/?api=1&query=${query}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-xs font-semibold uppercase tracking-[0.15em] text-accent underline underline-offset-4"
-                                        >
-                                            Directions
-                                        </a>
-                                    </div>
-                                </motion.div>
-                            );
-                        })}
+                    <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+                        {presenceCities.map((city, index) => (
+                            <motion.div
+                                key={city}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.3 }}
+                                transition={{ duration: 0.6, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                                className="flex flex-col items-center gap-4 rounded-2xl border border-accent/15 bg-background px-6 py-8 text-center"
+                            >
+                                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-background shadow-md shadow-accent/30">
+                                    <PiMapPinFill className="h-7 w-7" aria-hidden="true" />
+                                </span>
+                                <p className="font-heading text-xl text-primary-text">{city}</p>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>
