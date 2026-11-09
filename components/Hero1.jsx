@@ -33,7 +33,7 @@ const slides = [
     ctaHref: "/sanatana-dharma",
   },
   {
-    image: "/spiritualevents-20.webp",
+    image: "/spiritualevents-17.webp",
     eyebrow: "Spiritual Events",
     title: "Gather, reflect, and grow together.",
     description:
@@ -42,7 +42,7 @@ const slides = [
     ctaHref: "/contact",
   },
   {
-    image: "/sacredpooja-04.webp",
+    image: "/sacredpooja-14.webp",
     eyebrow: "Sanatana Dharma",
     title: "Discover a tradition older than time itself.",
     description:
