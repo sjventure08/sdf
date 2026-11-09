@@ -13,6 +13,16 @@ const gurujiMeetings: Program = {
     desc: "Gatherings and darshans with Guruji — moments of guidance, blessing and connection with the community.",
     images: [
         {
+            src: "/guruji-meeting-mohan-bhagwat-02.jpeg",
+            title: "Guruji with Dr. Mohan Bhagwat",
+            description: "Dr. Mohan Bhagwat, Sarsanghchalak (Chief) of the RSS.",
+        },
+        {
+            src: "/guruji-meeting-mohan-bhagwat-01.jpeg",
+            title: "Guruji with Dr. Mohan Bhagwat",
+            description: "Dr. Mohan Bhagwat, Sarsanghchalak (Chief) of the RSS.",
+        },
+        {
             src: "/sdf (71).webp",
             title: "Guruji with Shri Gajendra Singh Shekhawat",
             description: "Union Cabinet Minister, Government of India",
@@ -48,19 +58,19 @@ const gurujiMeetings: Program = {
             description: "Deputy Chief Minister and Minister for Medical Health & Family Welfare, Uttar Pradesh",
         },
         {
-            src: "/guruji-meeting-mohan-bhagwat-01.jpeg",
-            title: "Guruji with Dr. Mohan Bhagwat",
-            description: "Dr. Mohan Bhagwat, Sarsanghchalak (Chief) of the RSS.",
-        },
-        {
-            src: "/guruji-meeting-mohan-bhagwat-02.jpeg",
-            title: "Guruji with Dr. Mohan Bhagwat",
-            description: "Dr. Mohan Bhagwat, Sarsanghchalak (Chief) of the RSS.",
-        },
-        {
             src: "/sdf (5).webp",
-            title: "Guruji with Dr. Mohan Bhagwat",
-            description: "Dr. Mohan Bhagwat, Sarsanghchalak (Chief) of the RSS.",
+            title: "Guruji with Shri Alok Kumar",
+            description: "Shri Alok Kumar, the International President of the Vishva Hindu Parishad (VHP).",
+        },
+        {
+            src: "/sdf (48).webp",
+            title: "Guruji with Shri Alok Kumar",
+            description: "Shri Alok Kumar, the International President of the Vishva Hindu Parishad (VHP).",
+        },
+        {
+            src: "/sdf (39).webp",
+            title: "Guruji with Shri Alok Kumar",
+            description: "Shri Alok Kumar, the International President of the Vishva Hindu Parishad (VHP).",
         },
     ],
 };
@@ -122,6 +132,66 @@ const kumbhMela: Program = {
             src: "/kumbhmela-01.webp",
             title: "Guruji with Swami Kailashanand Giri Ji",
             description: "At the Kumbh Mela.",
+        },
+        {
+            src: "/parishad-06.webp",
+            title: "Kumbh Mela Gathering",
+            description: "Guruji and fellow saints at a Kumbh Mela gathering.",
+        },
+        {
+            src: "/parishad-07.webp",
+            title: "Kumbh Mela Gathering",
+            description: "Guruji and fellow saints at a Kumbh Mela gathering.",
+        },
+        {
+            src: "/sdf-1(14).webp",
+            title: "Kumbh Mela Procession",
+            description: "Saints and devotees gathered at the Kumbh Mela.",
+        },
+        {
+            src: "/sdf-1(18).webp",
+            title: "Kumbh Mela Gathering",
+            description: "A gathering of saints at the Kumbh Mela.",
+        },
+        {
+            src: "/sdf-1(24).webp",
+            title: "Kumbh Mela Gathering",
+            description: "A spiritual gathering with Guruji and fellow saints.",
+        },
+        {
+            src: "/sdf-1(25).webp",
+            title: "Kumbh Mela Gathering",
+            description: "",
+        },
+        {
+            src: "/sdf-1(28).webp",
+            title: "Kumbh Mela Gathering",
+            description: "Guruji with Acharya Lokesh Muni Ji and Swami Kailashanand Giri Ji.",
+        },
+        {
+            src: "/sdf-1(21).webp",
+            title: "Kumbh Mela Gathering",
+            description: "Guruji with Acharya Lokesh Muni Ji, Mahant Ravindra Puri Ji Maharaj and Swami Balkanand Giri Ji.",
+        },
+        {
+            src: "/sdf-1(32).webp",
+            title: "Kumbh Mela Gathering",
+            description: "Guruji meeting with fellow saints at the Kumbh Mela.",
+        },
+        {
+            src: "/sdf-1(35).webp",
+            title: "Kumbh Mela Gathering",
+            description: "Guruji with fellow saints at the Kumbh Mela.",
+        },
+        {
+            src: "/sdf-1(38).webp",
+            title: "Guruji at the Kumbh Mela",
+            description: "A moment with Guruji at the Kumbh Mela.",
+        },
+        {
+            src: "/sdf-1(45).webp",
+            title: "Kumbh Mela Gathering",
+            description: "Saints gathered with Guruji at the Kumbh Mela.",
         },
     ],
 };
