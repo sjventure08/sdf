@@ -29,7 +29,7 @@ const missionSteps = [
         title: "Preserve",
         subtitle: "Keep the wisdom alive.",
         desc: "Protect and share the knowledge, traditions, culture, and practices passed through generations.",
-        image: "/SpiritualEvents/spiritualevents-32.webp",
+        image: "/spiritualevents-32.webp",
         alt: "Saints and devotees offering aarti together at the spiritual festival",
     },
     {
@@ -38,7 +38,7 @@ const missionSteps = [
         title: "Empower",
         subtitle: "Help people discover their path.",
         desc: "Create spaces for learning, reflection, spiritual growth, and meaningful community.",
-        image: "/SpiritualEvents/spiritualevents-17.webp",
+        image: "/spiritualevents-17.webp",
         alt: "Guruji delivering a discourse at the Vedarth Vigyan Sangoshti",
     },
     {
@@ -47,7 +47,7 @@ const missionSteps = [
         title: "Serve",
         subtitle: "Let Dharma become seva.",
         desc: "Turn compassion into action by serving people, communities, and society.",
-        image: "/SocialActivity/socialactivity-06.webp",
+        image: "/socialactivity-06.webp",
         alt: "Volunteers serving food to devotees",
     },
 ];

@@ -15,7 +15,7 @@ import {
 
 const slides = [
   {
-    image: "/SpiritualEvents/spiritualevents-25.webp",
+    image: "/spiritualevents-25.webp",
     eyebrow: "Sanatana Dharma Foundation",
     title: "What if your roots could shape your future?",
     description:
@@ -24,7 +24,7 @@ const slides = [
     ctaHref: "/contact",
   },
   {
-    image: "/KumbhMela/kumbhmela-25.webp",
+    image: "/Kumbhmela1.webp",
     eyebrow: "Kumbh Mela",
     title: "Walk the world's largest gathering of faith.",
     description:
@@ -33,7 +33,7 @@ const slides = [
     ctaHref: "/sanatana-dharma",
   },
   {
-    image: "/SpiritualEvents/spiritiualevents1.webp",
+    image: "/spiritualevents-20.webp",
     eyebrow: "Spiritual Events",
     title: "Gather, reflect, and grow together.",
     description:
@@ -42,7 +42,7 @@ const slides = [
     ctaHref: "/contact",
   },
   {
-    image: "/SacredPooja/sacredpooja-04.webp",
+    image: "/sacredpooja-04.webp",
     eyebrow: "Sanatana Dharma",
     title: "Discover a tradition older than time itself.",
     description:

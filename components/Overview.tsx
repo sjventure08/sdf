@@ -49,22 +49,22 @@ const traits = [
 
 const offers = [
     {
-        image: "/SacredPooja/sacredpooja-11.webp",
+        image: "/sacredpooja-11.webp",
         title: "Discover Yourself",
         desc: "Understand the true nature of who you are beyond the body and mind.",
     },
     {
-        image: "/SpiritualEvents/spiritualevents-11.webp",
+        image: "/spiritualevents-11.webp",
         title: "Live With Purpose",
         desc: "Align your thoughts, words and actions with dharma and higher values.",
     },
     {
-        image: "/SpiritualEvents/spiritualevents-20.webp",
+        image: "/spiritualevents-20.webp",
         title: "Grow In Wisdom",
         desc: "Explore ancient wisdom that answers life's deepest questions.",
     },
     {
-        image: "/SocialActivity/socialactivity-09.webp",
+        image: "/socialactivity-09.webp",
         title: "Serve Selflessly",
         desc: "Make a positive impact and become a source of meaning for others.",
     },
