@@ -97,7 +97,7 @@ export default function Hero1() {
   const scrollNext = useCallback(() => api && api.scrollNext(), [api]);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-[#211A16]">
+    <section className="relative h-screen w-full overflow-hidden bg-primary-text">
       <Carousel
         setApi={setApi}
         opts={{ loop: true }}
@@ -114,7 +114,7 @@ export default function Hero1() {
                 sizes="100vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#211A16]/90 via-[#211A16]/40 to-[#211A16]/20" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary-text/90 via-primary-text/40 to-primary-text/20" />
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -133,7 +133,7 @@ export default function Hero1() {
                 exit={{ opacity: 0, y: -16 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
               >
-                <span className="text-xs font-semibold uppercase tracking-[0.35em] text-highlight">
+                <span className="eyebrow text-highlight">
                   {slides[selectedIndex].eyebrow}
                 </span>
 
@@ -148,7 +148,7 @@ export default function Hero1() {
                 <div className="pointer-events-auto mt-8 flex flex-wrap items-center justify-center gap-6">
                   <Link
                     href={slides[selectedIndex].ctaHref}
-                    className="rounded-sm bg-[#E87516] border border-[#B8892E] px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] text-white transition-opacity hover:opacity-90 lg:px-8 lg:py-4 lg:text-sm"
+                    className="btn btn-primary"
                   >
                     {slides[selectedIndex].ctaLabel} →
                   </Link>

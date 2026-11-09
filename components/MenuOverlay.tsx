@@ -45,7 +45,7 @@ export default function MenuOverlay({
         <AnimatePresence>
             {isOpen && (
                 <motion.div
-                    className="fixed inset-0 z-[100] bg-secondary"
+                    className="fixed inset-0 z-[100] bg-white"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

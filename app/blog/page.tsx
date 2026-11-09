@@ -25,7 +25,7 @@ export default function BlogIndexPage() {
                     {blogPosts.map((post) => (
                         <article
                             key={post.slug}
-                            className="flex flex-col overflow-hidden rounded-2xl border border-accent/15 bg-secondary/40"
+                            className="flex flex-col overflow-hidden rounded-2xl border border-accent/15 bg-white"
                         >
                             <div className="relative h-56 w-full">
                                 <Image
@@ -38,7 +38,7 @@ export default function BlogIndexPage() {
                             </div>
 
                             <div className="flex flex-1 flex-col p-6">
-                                <h2 className="font-heading text-xl leading-[1.25] text-primary-text">
+                                <h2 className="card-title text-primary-text">
                                     {post.title}
                                 </h2>
 
@@ -48,7 +48,7 @@ export default function BlogIndexPage() {
 
                                 <Link
                                     href={`/blog/${post.slug}`}
-                                    className="mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-accent transition-colors hover:text-highlight"
+                                    className="mt-6 text-link w-fit"
                                 >
                                     {post.buttonText} →
                                 </Link>

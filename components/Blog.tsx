@@ -15,11 +15,11 @@ export default function Blog() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="mx-auto max-w-2xl text-center"
             >
-                <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                <span className="eyebrow text-accent">
                     From The Journal
                 </span>
 
-                <h2 className="mt-6 font-heading text-4xl leading-[1.1] text-primary-text md:text-5xl">
+                <h2 className="mt-6 section-title text-primary-text">
                     Stories & Reflections
                 </h2>
 
@@ -41,7 +41,7 @@ export default function Blog() {
                             delay: index * 0.1,
                             ease: [0.22, 1, 0.36, 1],
                         }}
-                        className="flex flex-col overflow-hidden rounded-2xl border border-accent/15 bg-secondary/40"
+                        className="flex flex-col overflow-hidden rounded-2xl border border-accent/15 bg-white"
                     >
                         <div className="relative h-56 w-full">
                             <Image
@@ -54,7 +54,7 @@ export default function Blog() {
                         </div>
 
                         <div className="flex flex-1 flex-col p-6">
-                            <h3 className="font-heading text-xl leading-[1.25] text-primary-text">
+                            <h3 className="card-title text-primary-text">
                                 {post.title}
                             </h3>
 
@@ -64,7 +64,7 @@ export default function Blog() {
 
                             <Link
                                 href={`/blog/${post.slug}`}
-                                className="mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-accent transition-colors hover:text-highlight"
+                                className="mt-6 text-link w-fit"
                             >
                                 {post.buttonText} →
                             </Link>

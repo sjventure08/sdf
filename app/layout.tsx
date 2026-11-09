@@ -1,21 +1,15 @@
 import type { Metadata } from "next";
-import { Merriweather, Open_Sans, Geist } from "next/font/google";
+import { Maname } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TrishulBadge from "../components/TrishulBadge";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
-const merriweather = Merriweather({
-  variable: "--font-merriweather",
+const maname = Maname({
+  weight: "400",
   subsets: ["latin"],
-});
-
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
+  variable: "--font-maname",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", merriweather.variable, openSans.variable, "font-sans", geist.variable)}
+      className={cn("h-full", "antialiased", "font-sans", maname.variable)}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />

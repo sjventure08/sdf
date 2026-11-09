@@ -24,12 +24,12 @@ export default async function BlogPostPage({
             <article className="mx-auto max-w-3xl">
                 <Link
                     href="/"
-                    className="text-sm font-semibold uppercase tracking-[0.15em] text-accent transition-colors hover:text-highlight"
+                    className="text-link"
                 >
                     ← Back to Journal
                 </Link>
 
-                <h1 className="mt-6 font-heading text-4xl leading-[1.1] text-primary-text md:text-5xl">
+                <h1 className="mt-6 section-title text-primary-text">
                     {post.title}
                 </h1>
 
@@ -69,7 +69,7 @@ export default async function BlogPostPage({
                                     {section.paragraphs.map((paragraph) => (
                                         <div key={paragraph.subheading ?? paragraph.text}>
                                             {paragraph.subheading && (
-                                                <h3 className="font-heading text-lg text-primary-text">
+                                                <h3 className="card-title text-primary-text">
                                                     {paragraph.subheading}
                                                 </h3>
                                             )}
@@ -107,7 +107,7 @@ export default async function BlogPostPage({
                             <Link
                                 key={other.slug}
                                 href={`/blog/${other.slug}`}
-                                className="group flex flex-col overflow-hidden rounded-2xl border border-accent/15 bg-secondary/40 transition-colors hover:border-accent/40"
+                                className="group flex flex-col overflow-hidden rounded-2xl border border-accent/15 bg-white transition-colors hover:border-accent/40"
                             >
                                 <div className="relative h-48 w-full">
                                     <Image
@@ -120,7 +120,7 @@ export default async function BlogPostPage({
                                 </div>
 
                                 <div className="flex flex-1 flex-col p-6">
-                                    <h3 className="font-heading text-lg leading-[1.25] text-primary-text">
+                                    <h3 className="card-title text-primary-text">
                                         {other.title}
                                     </h3>
 
@@ -128,7 +128,7 @@ export default async function BlogPostPage({
                                         {other.description}
                                     </p>
 
-                                    <span className="mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-accent transition-colors group-hover:text-highlight">
+                                    <span className="mt-6 text-link w-fit">
                                         {other.buttonText} →
                                     </span>
                                 </div>

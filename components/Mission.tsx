@@ -68,7 +68,7 @@ export default function Mission() {
                     transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 >
                     <div className="text-center lg:text-left">
-                        <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                        <span className="eyebrow text-accent">
                             Our Mission
                         </span>
 
@@ -78,10 +78,10 @@ export default function Mission() {
                             <span className="h-px w-8 bg-accent/40" />
                         </div>
 
-                        <h2 className="mt-6 font-heading text-4xl uppercase leading-[1.1] text-primary-text md:text-5xl">
+                        <h2 className="mt-6 section-title text-primary-text">
                             Turning <span className="text-accent">Dharma</span>
                             <br />
-                            Into Action.
+                            into Action.
                         </h2>
 
                         <div className="mt-4 flex items-center justify-center gap-3 lg:justify-start">
@@ -112,8 +112,8 @@ export default function Mission() {
                                     onClick={() => setActiveIndex(index)}
                                     className={`relative flex cursor-pointer items-start gap-5 rounded-3xl border p-4 text-left transition-all duration-300 ${
                                         isActive
-                                            ? "border-accent/30 bg-secondary/60 shadow-[0_8px_30px_rgba(184,137,46,0.12)]"
-                                            : "border-transparent opacity-60 hover:bg-secondary/30 hover:opacity-100"
+                                            ? "border-accent/30 bg-white shadow-[0_8px_30px_rgba(184,137,46,0.12)]"
+                                            : "border-transparent opacity-60 hover:bg-white hover:opacity-100"
                                     }`}
                                 >
                                     <div
@@ -129,7 +129,7 @@ export default function Mission() {
                                     <Icon name={step.icon} className="mt-2 h-6 w-6 shrink-0 text-accent" />
 
                                     <div>
-                                        <h3 className="font-heading text-lg uppercase tracking-wide text-accent">
+                                        <h3 className="card-title text-accent">
                                             {step.title}
                                         </h3>
 
@@ -159,7 +159,7 @@ export default function Mission() {
                         id="mission-panel"
                         role="tabpanel"
                         aria-labelledby={`mission-tab-${activeIndex}`}
-                        className="relative aspect-4/3 w-full overflow-hidden rounded-l-[100px] bg-secondary/40 md:rounded-l-[200px]"
+                        className="relative aspect-4/3 w-full overflow-hidden rounded-l-[100px] bg-white md:rounded-l-[200px]"
                     >
                         <AnimatePresence initial={false}>
                             <motion.div
@@ -184,7 +184,7 @@ export default function Mission() {
                     <div className="mt-10 text-center">
                         <span className="font-heading text-4xl text-accent">❝</span>
 
-                        <p className="mt-2 font-heading text-xl uppercase leading-[1.3] text-primary-text md:text-2xl">
+                        <p className="mt-2 font-heading text-xl leading-[1.3] text-primary-text md:text-2xl">
                             Wisdom becomes meaningful
                             <br />
                             <span className="text-accent">when it becomes action.</span>
@@ -198,7 +198,7 @@ export default function Mission() {
 
                         <Link
                             href="/initiatives"
-                            className="mt-8 inline-block cursor-pointer rounded-full border border-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-accent transition-colors hover:bg-accent hover:text-background"
+                            className="mt-8 btn btn-outline"
                         >
                             Discover Our Initiatives →
                         </Link>

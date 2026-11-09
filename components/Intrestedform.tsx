@@ -35,7 +35,7 @@ export default function InterestedForm() {
     };
 
     return (
-        <section className="bg-secondary px-8 py-16 md:px-16 md:py-24">
+        <section className="bg-white px-8 py-16 md:px-16 md:py-24">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ export default function InterestedForm() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="mx-auto max-w-xl text-center"
             >
-                <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                <span className="eyebrow text-accent">
                     Get Involved
                 </span>
 
@@ -53,8 +53,8 @@ export default function InterestedForm() {
                     <span className="h-px w-8 bg-accent/40" />
                 </div>
 
-                <h2 className="mt-6 font-heading text-4xl uppercase leading-[1.1] text-primary-text md:text-5xl">
-                    Join Us <span className="text-accent">On The Path</span>
+                <h2 className="mt-6 section-title text-primary-text">
+                    Join Us <span className="text-accent">on the Path</span>
                 </h2>
 
                 <p className="mx-auto mt-6 max-w-sm text-base leading-7 text-secondary-text">
@@ -71,14 +71,14 @@ export default function InterestedForm() {
             >
                 {submitted ? (
                     <div className="rounded-2xl border border-accent/30 bg-background/40 px-6 py-10 text-center">
-                        <p className="font-heading text-xl uppercase text-accent">Thank You</p>
+                        <p className="font-heading text-xl text-accent">Thank You</p>
                         <p className="mt-2 text-sm leading-6 text-secondary-text">
                             We&apos;ve received your message and will be in touch soon.
                         </p>
                         <button
                             type="button"
                             onClick={() => setSubmitted(false)}
-                            className="mt-6 cursor-pointer text-xs font-semibold uppercase tracking-[0.2em] text-accent underline underline-offset-4"
+                            className="mt-6 cursor-pointer text-link underline underline-offset-4"
                         >
                             Submit another response
                         </button>
@@ -88,7 +88,7 @@ export default function InterestedForm() {
                         <div>
                             <label
                                 htmlFor="name"
-                                className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary-text"
+                                className="form-label"
                             >
                                 Full Name
                             </label>
@@ -107,7 +107,7 @@ export default function InterestedForm() {
                         <div>
                             <label
                                 htmlFor="email"
-                                className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary-text"
+                                className="form-label"
                             >
                                 Email
                             </label>
@@ -129,7 +129,7 @@ export default function InterestedForm() {
                         <div>
                             <label
                                 htmlFor="phone"
-                                className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary-text"
+                                className="form-label"
                             >
                                 Phone <span className="normal-case text-tertiary-text">(optional)</span>
                             </label>
@@ -145,7 +145,7 @@ export default function InterestedForm() {
                         <div>
                             <label
                                 htmlFor="message"
-                                className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary-text"
+                                className="form-label"
                             >
                                 Message <span className="normal-case text-tertiary-text">(optional)</span>
                             </label>
@@ -161,7 +161,7 @@ export default function InterestedForm() {
                         <button
                             type="submit"
                             disabled={isSubmitting}
-                            className="mt-2 inline-flex cursor-pointer items-center justify-center rounded-lg border border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-background transition-colors hover:bg-transparent hover:text-accent disabled:cursor-not-allowed disabled:opacity-60"
+                            className="mt-2 btn btn-primary"
                         >
                             {isSubmitting ? "Sending..." : "Submit Interest →"}
                         </button>

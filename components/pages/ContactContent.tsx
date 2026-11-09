@@ -63,11 +63,11 @@ export default function ContactContent() {
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                     >
-                        <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                        <span className="eyebrow text-accent">
                             Get In Touch
                         </span>
 
-                        <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
+                        <h2 className="mt-4 section-title text-primary-text">
                             Reach Out Anytime
                         </h2>
 
@@ -111,18 +111,18 @@ export default function ContactContent() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-                        className="rounded-2xl border border-accent/15 bg-secondary/30 p-6 md:p-8"
+                        className="rounded-2xl border border-accent/15 bg-white p-6 md:p-8"
                     >
                         {submitted ? (
                             <div className="flex h-full flex-col items-center justify-center py-10 text-center">
-                                <p className="font-heading text-xl uppercase text-accent">Thank You</p>
+                                <p className="font-heading text-xl text-accent">Thank You</p>
                                 <p className="mt-2 text-sm leading-6 text-secondary-text">
                                     We&apos;ve received your message and will be in touch soon.
                                 </p>
                                 <button
                                     type="button"
                                     onClick={() => setSubmitted(false)}
-                                    className="mt-6 cursor-pointer text-xs font-semibold uppercase tracking-[0.2em] text-accent underline underline-offset-4"
+                                    className="mt-6 cursor-pointer text-link underline underline-offset-4"
                                 >
                                     Send another message
                                 </button>
@@ -132,7 +132,7 @@ export default function ContactContent() {
                                 <div>
                                     <label
                                         htmlFor="name"
-                                        className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary-text"
+                                        className="form-label"
                                     >
                                         Full Name
                                     </label>
@@ -151,7 +151,7 @@ export default function ContactContent() {
                                 <div>
                                     <label
                                         htmlFor="email"
-                                        className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary-text"
+                                        className="form-label"
                                     >
                                         Email
                                     </label>
@@ -173,7 +173,7 @@ export default function ContactContent() {
                                 <div>
                                     <label
                                         htmlFor="subject"
-                                        className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary-text"
+                                        className="form-label"
                                     >
                                         Subject
                                     </label>
@@ -192,7 +192,7 @@ export default function ContactContent() {
                                 <div>
                                     <label
                                         htmlFor="message"
-                                        className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary-text"
+                                        className="form-label"
                                     >
                                         Message
                                     </label>
@@ -211,7 +211,7 @@ export default function ContactContent() {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="mt-2 inline-flex cursor-pointer items-center justify-center rounded-lg border border-accent bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-background transition-colors hover:bg-transparent hover:text-accent disabled:cursor-not-allowed disabled:opacity-60"
+                                    className="mt-2 btn btn-primary"
                                 >
                                     {isSubmitting ? "Sending..." : "Send Message →"}
                                 </button>
@@ -223,7 +223,7 @@ export default function ContactContent() {
 
             {/* Presence (no maps) */}
 
-            <section className="bg-secondary/40 px-8 py-16 md:px-16 md:py-24">
+            <section className="bg-white px-8 py-16 md:px-16 md:py-24">
                 <div className="mx-auto max-w-5xl">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -232,10 +232,10 @@ export default function ContactContent() {
                         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                         className="text-center"
                     >
-                        <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                        <span className="eyebrow text-accent">
                             Where We Work
                         </span>
-                        <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
+                        <h2 className="mt-4 section-title text-primary-text">
                             Our Presence Across India
                         </h2>
                     </motion.div>
@@ -253,7 +253,7 @@ export default function ContactContent() {
                                 <span className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-background shadow-md shadow-accent/30">
                                     <PiMapPinFill className="h-7 w-7" aria-hidden="true" />
                                 </span>
-                                <p className="font-heading text-xl text-primary-text">{city}</p>
+                                <p className="card-title text-primary-text">{city}</p>
                             </motion.div>
                         ))}
                     </div>

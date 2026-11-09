@@ -38,12 +38,12 @@ export default function KumbhMela() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="mb-16 max-w-2xl"
             >
-                <span className="text-sm font-semibold uppercase tracking-[0.35em] text-highlight">
+                <span className="eyebrow text-highlight">
                     Maha Kumbh Mela 2025
                 </span>
 
-                <h2 className="mt-6 font-heading text-4xl leading-[1.1] text-primary-text md:text-5xl">
-                    A sacred gathering, in preparation
+                <h2 className="mt-6 section-title text-primary-text">
+                    A Sacred Gathering, in Preparation
                 </h2>
             </motion.div>
 
@@ -74,19 +74,19 @@ export default function KumbhMela() {
                             />
                         </motion.div>
 
-                        <div className="absolute inset-0 bg-linear-to-t from-[#211A16] via-[#211A16]/20 to-transparent transition-opacity duration-300 group-hover:opacity-0" />
+                        <div className="absolute inset-0 bg-linear-to-t from-primary-text via-primary-text/20 to-transparent transition-opacity duration-300 group-hover:opacity-0" />
 
                         <div className="absolute inset-x-0 bottom-0 p-8 transition-opacity duration-300 group-hover:opacity-0">
                             <motion.span
                                 layoutId={`category-${item.id}`}
-                                className="text-xs font-semibold uppercase tracking-[0.3em] text-highlight"
+                                className="eyebrow text-highlight"
                             >
                                 {item.category}
                             </motion.span>
 
                             <motion.h3
                                 layoutId={`title-${item.id}`}
-                                className="mt-3 font-heading text-2xl text-[#FFF8EA] md:text-3xl"
+                                className="mt-3 font-heading text-2xl text-cream md:text-3xl"
                             >
                                 {item.title}
                             </motion.h3>
@@ -99,7 +99,7 @@ export default function KumbhMela() {
                 {selected && (
                     <>
                         <motion.div
-                            className="fixed inset-0 z-[100] cursor-pointer bg-[#211A16]/80"
+                            className="fixed inset-0 z-[100] cursor-pointer bg-primary-text/80"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
@@ -110,7 +110,7 @@ export default function KumbhMela() {
                             <motion.div
                                 layoutId={`card-${selected.id}`}
                                 onClick={() => setSelectedId(null)}
-                                className="relative flex max-h-full w-full max-w-3xl cursor-pointer flex-col overflow-y-hidden rounded-3xl bg-secondary"
+                                className="relative flex max-h-full w-full max-w-3xl cursor-pointer flex-col overflow-y-hidden rounded-3xl bg-white"
                             >
                                 <motion.div layoutId={`image-${selected.id}`} className="relative h-[45vh] w-full shrink-0">
                                     <Image
@@ -134,7 +134,7 @@ export default function KumbhMela() {
                                 <div className="p-8 md:p-10">
                                     <motion.span
                                         layoutId={`category-${selected.id}`}
-                                        className="text-xs font-semibold uppercase tracking-[0.3em] text-highlight"
+                                        className="eyebrow text-highlight"
                                     >
                                         {selected.category}
                                     </motion.span>

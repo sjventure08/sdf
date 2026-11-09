@@ -126,7 +126,7 @@ export default function Overview() {
                 className="mt-16 flex items-center justify-center gap-4 md:mt-20"
             >
                 <span className="h-px w-10 bg-accent/40" />
-                <span className="text-xs font-semibold uppercase tracking-[0.35em] text-accent md:text-sm">
+                <span className="eyebrow text-accent md:text-sm">
                     At its heart, it offers
                 </span>
                 <span className="h-px w-10 bg-accent/40" />
@@ -146,7 +146,7 @@ export default function Overview() {
                             delay: index * 0.1,
                             ease: [0.22, 1, 0.36, 1],
                         }}
-                        className="group relative h-80 overflow-hidden rounded-2xl border border-accent/15 lg:col-span-1 bg-accent/5"
+                        className="group relative h-80 overflow-hidden rounded-2xl border border-accent/15 lg:col-span-1 bg-white"
                     >
                         {/* Image */}
                         <Image
@@ -177,15 +177,15 @@ export default function Overview() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.6, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                    className="flex flex-col items-start rounded-2xl p-6 sm:col-span-2 lg:col-span-1 bg-accent/5"
+                    className="flex flex-col items-start rounded-2xl border border-accent/15 p-6 sm:col-span-2 lg:col-span-1 bg-white"
                 >
                     <Icon name="sun" className="h-6 w-6 text-accent" />
 
-                    <span className="mt-6 text-xs font-semibold uppercase tracking-[0.3em] text-accent">
+                    <span className="mt-6 eyebrow text-accent">
                         Curious?
                     </span>
 
-                    <h3 className="mt-3 font-heading text-xl leading-[1.2] text-primary-text">
+                    <h3 className="mt-3 card-title text-primary-text">
                         There is so much more to explore.
                     </h3>
 
@@ -208,7 +208,7 @@ export default function Overview() {
             >
                 <Link
                     href="/sanatana-dharma"
-                    className="cursor-pointer rounded-full border border-[#E87516] px-10 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent shadow-[0_0_24px_rgba(184,137,46,0.25)] transition-colors hover:bg-[#E87516] hover:text-background"
+                    className="btn btn-outline shadow-[0_0_24px_rgba(184,137,46,0.25)]"
                 >
                     Know More →
                 </Link>

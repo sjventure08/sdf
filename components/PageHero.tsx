@@ -19,12 +19,12 @@ export default function PageHero({
     return (
         <section
             className={`relative overflow-hidden px-8 pb-16 pt-36 text-center md:px-16 md:pb-24 md:pt-44 ${
-                backgroundImage ? "bg-cover bg-center bg-no-repeat" : "bg-secondary"
+                backgroundImage ? "bg-cover bg-center bg-no-repeat" : "bg-white"
             }`}
             style={backgroundImage ? { backgroundImage: `url('${backgroundImage}')` } : undefined}
         >
             {backgroundImage && (
-                <div className="absolute inset-0 bg-[#211A16]/70" />
+                <div className="absolute inset-0 bg-primary-text/70" />
             )}
 
             <motion.div
@@ -33,13 +33,13 @@ export default function PageHero({
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="relative mx-auto max-w-3xl"
             >
-                <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                <span className="eyebrow text-accent">
                     {eyebrow}
                 </span>
 
                 <h1
                     className={`mt-6 font-heading text-4xl leading-[1.1] md:text-6xl ${
-                        backgroundImage ? "text-[#FFF8EA]" : "text-primary-text"
+                        backgroundImage ? "text-cream" : "text-primary-text"
                     }`}
                 >
                     {title}
@@ -48,7 +48,7 @@ export default function PageHero({
                 {description && (
                     <p
                         className={`mx-auto mt-6 max-w-2xl text-base leading-7 md:text-lg ${
-                            backgroundImage ? "text-[#E8CFA5]" : "text-secondary-text"
+                            backgroundImage ? "text-sand" : "text-secondary-text"
                         }`}
                     >
                         {description}

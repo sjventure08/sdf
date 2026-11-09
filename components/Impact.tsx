@@ -46,7 +46,7 @@ export default function Impact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.6 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="text-sm font-semibold uppercase tracking-[0.35em] text-accent"
+                className="eyebrow text-accent"
             >
                 Impact
             </motion.span>
@@ -84,7 +84,7 @@ export default function Impact() {
             >
                 <Link
                     href="/contact"
-                    className="cursor-pointer rounded-full border border-accent px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-accent transition-colors hover:bg-accent hover:text-background"
+                    className="btn btn-outline"
                 >
                     Join the Movement
                 </Link>

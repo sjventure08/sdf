@@ -41,7 +41,7 @@ export default function Hero() {
     return (
         <section
             ref={containerRef}
-            className="relative h-[800vh] bg-[#ffffff]"
+            className="relative h-[800vh] bg-white"
         >
             <div
                 className="sticky top-0 h-screen overflow-hidden bg-cover bg-center bg-no-repeat"
@@ -51,7 +51,7 @@ export default function Hero() {
                 {/* Background atmosphere */}
 
                 <div className="pointer-events-none absolute inset-0">
-                    <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#211A16]/10 blur-[150px]" />
+                    <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-text/10 blur-[150px]" />
                 </div>
 
                 {/* IMAGE — anchored to the bottom so it blends into the section's end */}
@@ -96,7 +96,7 @@ export default function Hero() {
             lg:text-left
           "
                 >
-                    <span className="text-xs font-semibold uppercase tracking-[0.35em] text-highlight">
+                    <span className="eyebrow text-highlight">
                         Sanatana Dharma Foundation
                     </span>
 
@@ -287,7 +287,7 @@ function CtaContent({
             <div className="flex flex-wrap items-center justify-center gap-6 lg:justify-start">
                 <Link
                     href="/contact"
-                    className="rounded-sm bg-[#E87516] border border-[#B8892E] px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] text-background transition-opacity hover:opacity-90 lg:px-8 lg:py-4 lg:text-sm"
+                    className="btn btn-primary"
                 >
                     Join the Seva →
                 </Link>

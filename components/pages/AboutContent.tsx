@@ -93,12 +93,12 @@ export default function AboutContent() {
                         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                         className="order-2 lg:order-1"
                     >
-                        <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                        <span className="eyebrow text-accent">
                             Our Story
                         </span>
 
-                        <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
-                            A revered non-profit dedicated to Sanatana Dharma
+                        <h2 className="mt-4 section-title text-primary-text">
+                            A Revered Non-Profit Dedicated to Sanatana Dharma
                         </h2>
 
                         <p className="mt-6 text-base leading-7 text-secondary-text">
@@ -153,7 +153,7 @@ export default function AboutContent() {
 
             {/* Vision & Mission */}
 
-            <section className="bg-secondary/40 px-8 py-16 md:px-16 md:py-24">
+            <section className="bg-white px-8 py-16 md:px-16 md:py-24">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -161,12 +161,12 @@ export default function AboutContent() {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="mx-auto max-w-3xl text-center"
             >
-                <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                <span className="eyebrow text-accent">
                     Our Vision & Mission
                 </span>
 
-                <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
-                    A contemporary platform for ancient wisdom
+                <h2 className="mt-4 section-title text-primary-text">
+                    A Contemporary Platform for Ancient Wisdom
                 </h2>
 
                 <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-secondary-text">
@@ -185,7 +185,7 @@ export default function AboutContent() {
 
             {/* Values */ }
 
-            < section className = "bg-secondary/40 px-8 py-16 md:px-16 md:py-24" >
+            < section className = "bg-white px-8 py-16 md:px-16 md:py-24" >
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -193,11 +193,11 @@ export default function AboutContent() {
                             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                             className="mx-auto max-w-2xl text-center"
                         >
-                            <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                            <span className="eyebrow text-accent">
                                 What Guides Us
                             </span>
 
-                            <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
+                            <h2 className="mt-4 section-title text-primary-text">
                                 Our Core Values
                             </h2>
                         </motion.div>
@@ -217,7 +217,7 @@ export default function AboutContent() {
                                     className="text-center"
                                 >
                                     <Icon name={value.icon} className="mx-auto h-7 w-7 text-accent" />
-                                    <p className="mt-4 font-heading text-lg text-primary-text">
+                                    <p className="mt-4 card-title text-primary-text">
                                         {value.title}
                                     </p>
                                     <p className="mt-2 text-sm leading-6 text-secondary-text">
@@ -238,11 +238,11 @@ export default function AboutContent() {
                             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                             className="mx-auto max-w-2xl text-center"
                         >
-                            <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                            <span className="eyebrow text-accent">
                                 What We Do
                             </span>
 
-                            <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
+                            <h2 className="mt-4 section-title text-primary-text">
                                 Our Work
                             </h2>
                         </motion.div>
@@ -260,7 +260,7 @@ export default function AboutContent() {
                                         ease: [0.22, 1, 0.36, 1],
                                     }}
                                 >
-                                    <p className="font-heading text-lg text-primary-text">
+                                    <p className="card-title text-primary-text">
                                         {item.title}
                                     </p>
                                     <p className="mt-2 text-sm leading-6 text-secondary-text">
@@ -273,7 +273,7 @@ export default function AboutContent() {
 
         {/* Aims & Objectives */ }
 
-        < section className = "bg-secondary/40 px-8 py-16 md:px-16 md:py-24" >
+        < section className = "bg-white px-8 py-16 md:px-16 md:py-24" >
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -281,12 +281,12 @@ export default function AboutContent() {
                             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                             className="mx-auto max-w-2xl text-center"
                         >
-                            <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                            <span className="eyebrow text-accent">
                                 Aims & Objectives
                             </span>
 
-                            <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
-                                Aims Of Sanatana Dharma
+                            <h2 className="mt-4 section-title text-primary-text">
+                                Aims of Sanatana Dharma
                             </h2>
                         </motion.div>
 
@@ -315,15 +315,15 @@ export default function AboutContent() {
 
         {/* CTA */ }
 
-        < section className = "bg-secondary px-8 py-16 text-center md:px-16 md:py-24" >
+        < section className = "bg-white px-8 py-16 text-center md:px-16 md:py-24" >
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.6 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             >
-                <h2 className="font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
-                    Join Us In Our Mission
+                <h2 className="section-title text-primary-text">
+                    Join Us in Our Mission
                 </h2>
 
                 <p className="mx-auto mt-4 max-w-md text-base leading-7 text-secondary-text">
@@ -335,7 +335,7 @@ export default function AboutContent() {
 
                 <Link
                     href="/contact"
-                    className="mt-8 inline-block cursor-pointer rounded-full border border-accent bg-accent px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-background transition-colors hover:bg-transparent hover:text-accent"
+                    className="mt-8 btn btn-primary"
                 >
                     Join Us →
                 </Link>

@@ -93,7 +93,7 @@ export default function SanatanaDharmaContent() {
 
             {/* Core Principles */}
 
-            <section className="bg-secondary/40 px-8 py-16 md:px-16 md:py-24">
+            <section className="bg-white px-8 py-16 md:px-16 md:py-24">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -101,11 +101,11 @@ export default function SanatanaDharmaContent() {
                     transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                     className="mx-auto max-w-2xl text-center"
                 >
-                    <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                    <span className="eyebrow text-accent">
                         Foundations
                     </span>
 
-                    <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
+                    <h2 className="mt-4 section-title text-primary-text">
                         Core Principles
                     </h2>
                 </motion.div>
@@ -125,7 +125,7 @@ export default function SanatanaDharmaContent() {
                             className="text-center"
                         >
                             <Icon name={principle.icon} className="mx-auto h-7 w-7 text-accent" />
-                            <p className="mt-4 font-heading text-lg text-primary-text">
+                            <p className="mt-4 card-title text-primary-text">
                                 {principle.title}
                             </p>
                             <p className="mt-2 text-sm leading-6 text-secondary-text">
@@ -146,11 +146,11 @@ export default function SanatanaDharmaContent() {
                     transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                     className="mx-auto max-w-2xl text-center"
                 >
-                    <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                    <span className="eyebrow text-accent">
                         Sacred Wisdom
                     </span>
 
-                    <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
+                    <h2 className="mt-4 section-title text-primary-text">
                         Scriptures & Texts
                     </h2>
                 </motion.div>
@@ -168,7 +168,7 @@ export default function SanatanaDharmaContent() {
                                 ease: [0.22, 1, 0.36, 1],
                             }}
                         >
-                            <div className="relative aspect-[1] w-full overflow-hidden rounded-2xl bg-secondary/30">
+                            <div className="relative aspect-[1] w-full overflow-hidden rounded-2xl bg-white">
                                 <Image
                                     src={text.img}
                                     alt={text.title}
@@ -178,7 +178,7 @@ export default function SanatanaDharmaContent() {
                                     className="object-fit object-center"
                                 />
                             </div>
-                            <p className="mt-4 font-heading text-base text-primary-text">
+                            <p className="mt-4 card-title text-primary-text">
                                 {text.title}
                             </p>
                             <p className="mt-2 text-sm leading-6 text-secondary-text">
@@ -191,7 +191,7 @@ export default function SanatanaDharmaContent() {
                 <div className="mt-12 text-center">
                     <Link
                         href="/blog/hindu-religious-texts-and-scriptures"
-                        className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-accent transition-colors hover:text-highlight"
+                        className="text-link"
                     >
                         Read the Full Journal Entry →
                     </Link>
@@ -200,7 +200,7 @@ export default function SanatanaDharmaContent() {
 
             {/* Practices */}
 
-            <section className="bg-secondary/40 px-8 py-16 md:px-16 md:py-24">
+            <section className="bg-white px-8 py-16 md:px-16 md:py-24">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -208,11 +208,11 @@ export default function SanatanaDharmaContent() {
                     transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                     className="mx-auto max-w-2xl text-center"
                 >
-                    <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                    <span className="eyebrow text-accent">
                         Living The Practice
                     </span>
 
-                    <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
+                    <h2 className="mt-4 section-title text-primary-text">
                         Practices & Traditions
                     </h2>
                 </motion.div>
@@ -231,7 +231,7 @@ export default function SanatanaDharmaContent() {
                             }}
                             className="rounded-2xl border border-accent/15 bg-background p-6"
                         >
-                            <p className="font-heading text-base text-primary-text">
+                            <p className="card-title text-primary-text">
                                 {practice.title}
                             </p>
                             <p className="mt-2 text-sm leading-6 text-secondary-text">
@@ -252,11 +252,11 @@ export default function SanatanaDharmaContent() {
                     transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                     className="mx-auto max-w-2xl text-center"
                 >
-                    <span className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">
+                    <span className="eyebrow text-accent">
                         Questions
                     </span>
 
-                    <h2 className="mt-4 font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
+                    <h2 className="mt-4 section-title text-primary-text">
                         Frequently Asked
                     </h2>
                 </motion.div>
@@ -265,7 +265,7 @@ export default function SanatanaDharmaContent() {
                     {faqs.map((faq) => (
                         <details
                             key={faq.q}
-                            className="group rounded-2xl border border-accent/15 bg-secondary/30 p-6 open:bg-secondary/50"
+                            className="group rounded-2xl border border-accent/15 bg-white p-6 open:bg-white"
                         >
                             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-heading text-base text-primary-text marker:content-none">
                                 {faq.q}
@@ -283,15 +283,15 @@ export default function SanatanaDharmaContent() {
 
             {/* CTA */}
 
-            <section className="bg-secondary px-8 py-16 text-center md:px-16 md:py-24">
+            <section className="bg-white px-8 py-16 text-center md:px-16 md:py-24">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.6 }}
                     transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 >
-                    <h2 className="font-heading text-3xl leading-[1.15] text-primary-text md:text-4xl">
-                        Continue The Journey
+                    <h2 className="section-title text-primary-text">
+                        Continue the Journey
                     </h2>
 
                     <p className="mx-auto mt-4 max-w-md text-base leading-7 text-secondary-text">
@@ -302,13 +302,13 @@ export default function SanatanaDharmaContent() {
                     <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
                         <Link
                             href="/initiatives"
-                            className="cursor-pointer rounded-full border border-accent bg-accent px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-background transition-colors hover:bg-transparent hover:text-accent"
+                            className="btn btn-primary"
                         >
                             Our Initiatives →
                         </Link>
                         <Link
                             href="/blog"
-                            className="text-sm font-semibold uppercase tracking-[0.15em] text-accent underline decoration-accent/30 underline-offset-4 transition-colors hover:decoration-accent"
+                            className="text-link underline decoration-accent/30 underline-offset-4 transition-colors hover:decoration-accent"
                         >
                             Visit the Journal
                         </Link>
